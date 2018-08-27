@@ -16,6 +16,7 @@
 		D9CE27E3212C9F05001D0DAC /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9CE27E2212C9F05001D0DAC /* SearchResultCell.xib */; };
 		D9CE27E5212CA3A0001D0DAC /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CE27E4212CA3A0001D0DAC /* SearchResultCell.swift */; };
 		D9CE27E7212DE50D001D0DAC /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9CE27E6212DE50D001D0DAC /* NothingFoundCell.xib */; };
+		D9CE27E9213092F9001D0DAC /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9CE27E8213092F9001D0DAC /* LoadingCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		D9CE27E2212C9F05001D0DAC /* SearchResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultCell.xib; sourceTree = "<group>"; };
 		D9CE27E4212CA3A0001D0DAC /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
 		D9CE27E6212DE50D001D0DAC /* NothingFoundCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NothingFoundCell.xib; sourceTree = "<group>"; };
+		D9CE27E8213092F9001D0DAC /* LoadingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				D9CE27E2212C9F05001D0DAC /* SearchResultCell.xib */,
 				D9CE27E4212CA3A0001D0DAC /* SearchResultCell.swift */,
 				D9CE27E6212DE50D001D0DAC /* NothingFoundCell.xib */,
+				D9CE27E8213092F9001D0DAC /* LoadingCell.xib */,
 			);
 			path = StoreSearch;
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			files = (
 				D9CE27D9212B467C001D0DAC /* LaunchScreen.storyboard in Resources */,
 				D9CE27D6212B467C001D0DAC /* Assets.xcassets in Resources */,
+				D9CE27E9213092F9001D0DAC /* LoadingCell.xib in Resources */,
 				D9CE27E3212C9F05001D0DAC /* SearchResultCell.xib in Resources */,
 				D9CE27E7212DE50D001D0DAC /* NothingFoundCell.xib in Resources */,
 				D9CE27D4212B4666001D0DAC /* Main.storyboard in Resources */,
