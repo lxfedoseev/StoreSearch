@@ -14,7 +14,7 @@ class SearchResultCell: UITableViewCell {
     @IBOutlet weak var artistNameLabel: UILabel!
     @IBOutlet weak var artworkImageView: UIImageView!
     
-    
+    var downloadTask: URLSessionDownloadTask?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -37,6 +37,10 @@ class SearchResultCell: UITableViewCell {
             artistNameLabel.text = String(format: "%@ (%@)",
                                           searchResult.artistName, kindForDisplay(searchResult.kind))
         }
+        artworkImageView.image = UIImage(named: "Placeholder")
+        if let smallURL = URL(string: searchResult.artworkSmallURL) {
+            downloadTask = artworkImageView.loadImage(url: smallURL)
+        }
     }
     
     func kindForDisplay(_ kind: String) -> String {
@@ -55,4 +59,9 @@ class SearchResultCell: UITableViewCell {
         }
     }
 
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        downloadTask?.cancel()
+        downloadTask = nil
+    }
 }
