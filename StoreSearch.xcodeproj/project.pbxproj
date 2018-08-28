@@ -11,7 +11,6 @@
 		D9CE27D1212B4666001D0DAC /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CE27D0212B4666001D0DAC /* SearchViewController.swift */; };
 		D9CE27D4212B4666001D0DAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9CE27D2212B4666001D0DAC /* Main.storyboard */; };
 		D9CE27D6212B467C001D0DAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9CE27D5212B467C001D0DAC /* Assets.xcassets */; };
-		D9CE27D9212B467C001D0DAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9CE27D7212B467C001D0DAC /* LaunchScreen.storyboard */; };
 		D9CE27E1212C9B31001D0DAC /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CE27E0212C9B31001D0DAC /* SearchResult.swift */; };
 		D9CE27E3212C9F05001D0DAC /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9CE27E2212C9F05001D0DAC /* SearchResultCell.xib */; };
 		D9CE27E5212CA3A0001D0DAC /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CE27E4212CA3A0001D0DAC /* SearchResultCell.swift */; };
@@ -25,7 +24,6 @@
 		D9CE27D0212B4666001D0DAC /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		D9CE27D3212B4666001D0DAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D9CE27D5212B467C001D0DAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D9CE27D8212B467C001D0DAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9CE27DA212B467C001D0DAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9CE27E0212C9B31001D0DAC /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		D9CE27E2212C9F05001D0DAC /* SearchResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultCell.xib; sourceTree = "<group>"; };
@@ -68,7 +66,6 @@
 				D9CE27D0212B4666001D0DAC /* SearchViewController.swift */,
 				D9CE27D2212B4666001D0DAC /* Main.storyboard */,
 				D9CE27D5212B467C001D0DAC /* Assets.xcassets */,
-				D9CE27D7212B467C001D0DAC /* LaunchScreen.storyboard */,
 				D9CE27DA212B467C001D0DAC /* Info.plist */,
 				D9CE27E0212C9B31001D0DAC /* SearchResult.swift */,
 				D9CE27E2212C9F05001D0DAC /* SearchResultCell.xib */,
@@ -137,7 +134,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9CE27D9212B467C001D0DAC /* LaunchScreen.storyboard in Resources */,
 				D9CE27D6212B467C001D0DAC /* Assets.xcassets in Resources */,
 				D9CE27E9213092F9001D0DAC /* LoadingCell.xib in Resources */,
 				D9CE27E3212C9F05001D0DAC /* SearchResultCell.xib in Resources */,
@@ -169,14 +165,6 @@
 				D9CE27D3212B4666001D0DAC /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D9CE27D7212B467C001D0DAC /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D9CE27D8212B467C001D0DAC /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

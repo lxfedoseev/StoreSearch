@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="interactive" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="t9I-66-ZCF">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" keyboardDismissMode="interactive" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="t9I-66-ZCF">
+                                <rect key="frame" x="-6" y="-79" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="z0M-KX-b7Y"/>
@@ -33,6 +33,27 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="FsS-T0-J0L"/>
                                 </connections>
                             </searchBar>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W1u-G3-h0K">
+                                <rect key="frame" x="0.0" y="70" width="320" height="44"/>
+                                <items>
+                                    <navigationItem id="hZs-1L-dlW">
+                                        <nil key="title"/>
+                                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="he6-sO-E9E">
+                                            <rect key="frame" x="10" y="7.5" width="300" height="29"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <segments>
+                                                <segment title="All"/>
+                                                <segment title="Music"/>
+                                                <segment title="Software"/>
+                                                <segment title="E-books"/>
+                                            </segments>
+                                            <connections>
+                                                <action selector="segmentChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="31h-pj-Nkr"/>
+                                            </connections>
+                                        </segmentedControl>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -41,13 +62,17 @@
                             <constraint firstItem="t9I-66-ZCF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="KT8-cd-ydP"/>
                             <constraint firstItem="Jzf-L6-45z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QB4-ZY-kVb"/>
                             <constraint firstItem="t9I-66-ZCF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="S0J-0s-vSK"/>
+                            <constraint firstItem="W1u-G3-h0K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TC2-Rg-5gW"/>
                             <constraint firstItem="t9I-66-ZCF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fNw-OZ-EqR"/>
                             <constraint firstItem="Jzf-L6-45z" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="keL-bk-ZxY"/>
+                            <constraint firstItem="W1u-G3-h0K" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="vls-e2-lEr"/>
+                            <constraint firstItem="W1u-G3-h0K" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="yHU-XC-50Z"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="searchBar" destination="Jzf-L6-45z" id="eiY-s0-fGE"/>
+                        <outlet property="segmentedControl" destination="he6-sO-E9E" id="UpM-SV-HAq"/>
                         <outlet property="tableView" destination="t9I-66-ZCF" id="ClN-Gr-ccv"/>
                     </connections>
                 </viewController>
