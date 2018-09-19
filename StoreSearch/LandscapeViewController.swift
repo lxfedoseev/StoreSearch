@@ -13,11 +13,16 @@ class LandscapeViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var pageControl: UIPageControl!
     
+    private var downloadTasks = [URLSessionDownloadTask]()
+    
     var searchResults = [SearchResult]()
     private var firstTime = true
     
     deinit {
         print("deinit \(self)")
+        for task in downloadTasks {
+            task.cancel()
+        }
     }
     
     override func viewDidLoad() {
@@ -101,9 +106,10 @@ class LandscapeViewController: UIViewController {
         var x = marginX
         for (index, searchResult) in searchResults.enumerated() {
             // 1
-            let button = UIButton(type: .system)
-            button.backgroundColor = UIColor.white
-            button.setTitle("\(index)", for: .normal)
+            let button = UIButton(type: .custom)
+            button.setBackgroundImage(UIImage(named: "LandscapeButton"),
+                                      for: .normal)
+            downloadImage(for: searchResult, andPlaceOn: button)
             // 2
             button.frame = CGRect(
                 x: x + paddingHorz,
@@ -143,6 +149,25 @@ class LandscapeViewController: UIViewController {
                             x: self.scrollView.bounds.size.width * CGFloat(sender.currentPage),
                             y: 0) },
                        completion: nil)
+    }
+    
+    private func downloadImage(for searchResult: SearchResult,
+                               andPlaceOn button: UIButton) {
+        if let url = URL(string: searchResult.artworkSmallURL) {
+            let downloadTask = URLSession.shared.downloadTask(with: url) {
+                [weak button] url, response, error in
+                if error == nil, let url = url,
+                    let data = try? Data(contentsOf: url),
+                    let image = UIImage(data: data) {
+                    DispatchQueue.main.async {
+                        if let button = button {
+                            button.setImage(image, for: .normal)
+                        }
+                    } }
+            }
+            downloadTask.resume()
+            downloadTasks.append(downloadTask)
+        }
     }
 
     /*
