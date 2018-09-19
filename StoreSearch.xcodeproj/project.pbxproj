@@ -24,6 +24,7 @@
 		D9E212E9214C52EF00F99A81 /* SlideOutAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E212E8214C52EF00F99A81 /* SlideOutAnimationController.swift */; };
 		D9E212EB21500E3E00F99A81 /* LandscapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E212EA21500E3E00F99A81 /* LandscapeViewController.swift */; };
 		D9E212ED215014C500F99A81 /* FadeOutAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E212EC215014C500F99A81 /* FadeOutAnimationController.swift */; };
+		D9E212EF2152BB5A00F99A81 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E212EE2152BB5A00F99A81 /* Search.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		D9E212E8214C52EF00F99A81 /* SlideOutAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideOutAnimationController.swift; sourceTree = "<group>"; };
 		D9E212EA21500E3E00F99A81 /* LandscapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeViewController.swift; sourceTree = "<group>"; };
 		D9E212EC215014C500F99A81 /* FadeOutAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeOutAnimationController.swift; sourceTree = "<group>"; };
+		D9E212EE2152BB5A00F99A81 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				D9E212E8214C52EF00F99A81 /* SlideOutAnimationController.swift */,
 				D9E212EA21500E3E00F99A81 /* LandscapeViewController.swift */,
 				D9E212EC215014C500F99A81 /* FadeOutAnimationController.swift */,
+				D9E212EE2152BB5A00F99A81 /* Search.swift */,
 			);
 			path = StoreSearch;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9E212EF2152BB5A00F99A81 /* Search.swift in Sources */,
 				D9CE27D1212B4666001D0DAC /* SearchViewController.swift in Sources */,
 				D9E212E3213701E400F99A81 /* DimmingPresentationController.swift in Sources */,
 				D9E212ED215014C500F99A81 /* FadeOutAnimationController.swift in Sources */,
