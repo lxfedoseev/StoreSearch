@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D992E1FA215AA8CF003DE37E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D992E1F8215AA8CE003DE37E /* Localizable.strings */; };
+		D992E1FE215AAF68003DE37E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D992E200215AAF68003DE37E /* InfoPlist.strings */; };
 		D9C6B567215417EC0057A7D0 /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9C6B569215417EC0057A7D0 /* NothingFoundCell.xib */; };
 		D9C6B56B21541B3F0057A7D0 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9C6B56D21541B3F0057A7D0 /* LoadingCell.xib */; };
 		D9C6B57221541E050057A7D0 /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9C6B57421541E050057A7D0 /* SearchResultCell.xib */; };
@@ -28,6 +30,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D992E1F9215AA8CE003DE37E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D992E1FB215AA966003DE37E /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D992E1FF215AAF68003DE37E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D992E201215AAF69003DE37E /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D9C6B568215417EC0057A7D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/NothingFoundCell.xib; sourceTree = "<group>"; };
 		D9C6B56A2154185D0057A7D0 /* nl */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = nl; path = nl.lproj/NothingFoundCell.xib; sourceTree = "<group>"; };
 		D9C6B56C21541B3F0057A7D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LoadingCell.xib; sourceTree = "<group>"; };
@@ -83,6 +89,7 @@
 		D9CE27CD212B4666001D0DAC /* StoreSearch */ = {
 			isa = PBXGroup;
 			children = (
+				D992E1F8215AA8CE003DE37E /* Localizable.strings */,
 				D9CE27CE212B4666001D0DAC /* AppDelegate.swift */,
 				D9CE27D0212B4666001D0DAC /* SearchViewController.swift */,
 				D9CE27D2212B4666001D0DAC /* Main.storyboard */,
@@ -102,6 +109,7 @@
 				D9E212EA21500E3E00F99A81 /* LandscapeViewController.swift */,
 				D9E212EC215014C500F99A81 /* FadeOutAnimationController.swift */,
 				D9E212EE2152BB5A00F99A81 /* Search.swift */,
+				D992E200215AAF68003DE37E /* InfoPlist.strings */,
 			);
 			path = StoreSearch;
 			sourceTree = "<group>";
@@ -166,6 +174,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9CE27D6212B467C001D0DAC /* Assets.xcassets in Resources */,
+				D992E1FE215AAF68003DE37E /* InfoPlist.strings in Resources */,
+				D992E1FA215AA8CF003DE37E /* Localizable.strings in Resources */,
 				D9C6B56B21541B3F0057A7D0 /* LoadingCell.xib in Resources */,
 				D9C6B57221541E050057A7D0 /* SearchResultCell.xib in Resources */,
 				D9C6B567215417EC0057A7D0 /* NothingFoundCell.xib in Resources */,
@@ -199,6 +209,24 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		D992E1F8215AA8CE003DE37E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D992E1F9215AA8CE003DE37E /* en */,
+				D992E1FB215AA966003DE37E /* nl */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		D992E200215AAF68003DE37E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D992E1FF215AAF68003DE37E /* en */,
+				D992E201215AAF69003DE37E /* nl */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		D9C6B569215417EC0057A7D0 /* NothingFoundCell.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
